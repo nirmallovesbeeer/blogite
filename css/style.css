@@ -1,0 +1,269 @@
+/*!
+* Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
+* Copyright 2013-2020 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #1abc9c;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #1abc9c;
+  --secondary: #2c3e50;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --title-gray: #8e8e8e;
+  --text-gray: #d0d0d0;
+  --bg-dark: #212223;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-robo: 'Roboto', sans-serif;
+  --font-family-lato: 'Lato', sans-serif;
+  --font-family-montserrat: 'Montserrat', sans-serif;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+body {
+  font-family: var(--font-family-lato);
+  background: var(--bg-dark);
+}
+
+/* Mixins */
+/* Mixins */
+.dark-theme.blog .navbar .nav-item .nav-link {
+  color: var(--title-gray);
+}
+
+.blog .navbar {
+  margin-bottom: 6em;
+}
+
+.blog .navbar .nav-item.active .nav-link {
+  color: #ffffff;
+}
+
+.blog .navbar .navbar-brand {
+  font-family: var(--font-family-lato);
+}
+
+.blog .about {
+  margin-top: 6rem;
+}
+
+.blog .about .intro {
+  color: #8867ce;
+  font-size: 5rem;
+}
+
+.blog .about .desc {
+  color: #b1b1b1;
+  font-size: 17px;
+}
+
+.blog .about .instagram,
+.blog .about .twitter,
+.blog .about .github,
+.blog .about .dribble {
+  color: #cecece;
+}
+
+.blog .articles h3 {
+  color: var(--text-gray);
+}
+
+.blog .articles h3 .view-all {
+  cursor: pointer;
+}
+
+.blog .articles h3 .view-all:before {
+  font-size: 17px;
+}
+
+.blog .articles h3 .view-all:after {
+  content: "All articles";
+  font-size: 16px;
+  margin-left: 4px;
+  font-family: var(--font-family-lato);
+}
+
+.blog .articles h3 .view-all:hover {
+  color: #8867ce;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.blog .articles .article-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.blog .articles .article-item .article-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.blog .articles .article-item h5 {
+  color: var(--text-gray);
+  font-size: 16px;
+}
+
+.blog .articles .article-item .article-desc h6 {
+  font-size: 12px;
+  color: #757575;
+}
+
+.blog .news {
+  position: relative;
+}
+
+.blog .news svg {
+  position: absolute;
+  fill: #ffffff08;
+}
+
+.blog .news h1 {
+  color: var(--text-gray);
+}
+
+.blog .news h6 {
+  color: #8867ce;
+  font-size: 1.4rem;
+}
+
+.blog .news h5 {
+  color: var(--text-gray);
+  font-size: 15px;
+}
+
+.blog .news .news-section .news-item {
+  margin-bottom: 3em;
+}
+
+.blog .news .news-section .news-item footer {
+  font-size: 1.4rem;
+  color: #b5b6b7;
+}
+
+.blog .news .news-section p {
+  color: #8867ce;
+  font-size: 2.5rem;
+}
+
+.blog footer .footer {
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.1rem solid;
+  border-bottom-color: #45484c;
+}
+
+.blog footer .footer .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: var(--font-family-montserrat);
+}
+
+.blog footer .footer .phone h4 {
+  font-size: 1.2rem;
+  margin: 0 0 0 0.5rem;
+}
+
+.blog footer .footer .phone .fa {
+  font-size: 1.7rem;
+  color: #8867ce;
+}
+
+.blog footer .footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.blog footer .footer .social-media .fa {
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.blog footer .footer .social-media .fa:hover {
+  background: #262829;
+  border-radius: 2px;
+  color: #8867ce;
+}
+
+.blog footer .beer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog footer .beer svg {
+  fill: #fae265;
+}
+
+.blog footer .beer p {
+  color: #a79e6e;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+}
+/*# sourceMappingURL=style.css.map */

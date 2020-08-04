@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*!
+* Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
+* Copyright 2013-2020 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+*/
+
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "variables";
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 10rem;
+}
+
+body {
+    font-family: var(--font-family-lato);
+    background: var(--bg-dark);
+}
+
+/* Mixins */
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+/* Mixins */
+
+.dark-theme.blog .navbar .nav-item .nav-link {
+    color: var(--title-gray);
+}
+
+.blog {
+    .navbar {
+        margin-bottom: 6em;
+        .nav-item.active .nav-link {
+            color: #ffffff;
+        }
+        .navbar-brand {
+            font-family: var(--font-family-lato);
+        }
+    }
+    .about {
+        margin-top: 6rem;
+        .intro {
+            color: #8867ce;
+            font-size: 5rem;
+        }
+        .desc {
+            color: #b1b1b1;
+            font-size: 17px;
+        }
+        .instagram,
+        .twitter,
+        .github,
+        .dribble {
+            color: #cecece;
+        }
+    }
+    .articles {
+        h3 {
+            color: var(--text-gray);
+            .view-all {
+                cursor: pointer;
+                &:before {
+                    font-size: 17px;
+                }
+                &:after {
+                    content: "All articles";
+                    font-size: 16px;
+                    margin-left: 4px;
+                    font-family: var(--font-family-lato);
+                }
+                &:hover {
+                    color: #8867ce;
+                    transition: ease-in-out 0.5s;
+                }
+            }
+        }
+        .article-item {
+            @include flexCenter();
+            margin-bottom: 1.5rem;
+            .article-icon {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            h5 {
+                color: var(--text-gray);
+                font-size: 16px;
+            }
+            .article-desc {
+                h6 {
+                    font-size: 12px;
+                    color: #757575;
+                }
+            }
+        }
+    }
+    .news {
+        position: relative;
+        svg {
+            position: absolute;
+            fill: #ffffff08;
+        }
+        h1 {
+            color: var(--text-gray);
+        }
+        h6 {
+            color: #8867ce;
+            font-size: 1.4rem;
+        }
+        h5 {
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+        .news-section {
+            .news-item {
+                margin-bottom: 3em;
+                // blockquote {
+                //     &:before {
+                //         content: "\201c";
+                //         font-size: 5rem;
+                //         color: #ffffff12;
+                //         line-height: 1;
+                //         z-index: 1;
+                //         font-family: sans-serif;
+                //     }
+                // }
+                footer {
+                    font-size: 1.4rem;
+                    color: #b5b6b7;
+                }
+            }
+            p {
+                color: #8867ce;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    footer {
+        .footer {
+            color: aliceblue;
+            @include flexCenter();
+            border-bottom: 0.1rem solid;
+            border-bottom-color: #45484c;
+            .phone {
+                @include flexCenter();
+                flex: 1;
+                font-family: var(--font-family-montserrat);
+                h4 {
+                    font-size: 1.2rem;
+                    margin: 0 0 0 0.5rem;
+                }
+                .fa {
+                    font-size: 1.7rem;
+                    color: #8867ce;
+                }
+            }
+            .social-media {
+                @include flexCenter();
+                justify-content: space-between;
+                width: 100px;
+                margin: 0 auto;
+                padding: 10px 0;
+                .fa {
+                    padding: 0.8rem;
+                    cursor: pointer;
+                    &:hover {
+                        background: #262829;
+                        border-radius: 2px;
+                        color: #8867ce;
+                    }
+                }
+            }
+        }
+        .beer {
+            @include flexCenter();
+            svg {
+                fill: #fae265;
+            }
+            p {
+                color: #a79e6e;
+                font-size: 10px;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+}
